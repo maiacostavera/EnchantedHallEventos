@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1024">
 <title>Bodas - Enchanted Hall</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/bodas.css" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
 </head>
 <body>
-<nav class="navbar">
-    <img src="img/logo_enchanted_transparent.png" alt="Enchanted Hall Logo" class="logo">
 
+<header class="navbar">
+<img src="img/logo_enchanted_transparent.png" alt="Enchanted Hall Logo" class="logo" />
+<nav>
     <ul class="nav-links">
     <li><a href="index.html">Inicio</a></li>
     <li class="dropdown">
-        <a href="#" class="dropbtn">Eventos</a>
+        <a href="#">Eventos</a>
         <ul class="dropdown-content">
         <li><a href="bodas.html">Bodas</a></li>
         <li><a href="quinceaneras.html">Quinceañeras</a></li>
@@ -24,15 +27,87 @@
         <li><a href="corporativos.html">Corporativos</a></li>
         </ul>
     </li>
-    <li><a href="index.html#Contacto">Contacto</a></li>
-    <li><a href="index.html#Galeria">Galería</a></li>
     </ul>
 </nav>
+</header>
 
-<section class="evento-detalle">
-    <h1>Bodas</h1>
-    <p>En Enchanted Hall, hacemos realidad la boda de tus sueños. Contamos con un ambiente elegante, servicios personalizados y todo lo necesario para que vivas un día inolvidable.</p>
-    <img src="img/bodas.jpg" alt="Imagen de boda" style="width:100%; max-width:800px; margin-top: 20px;">
+<section class="frase-romantica animada">
+<h2>Hacé de tu gran día un recuerdo inolvidable en Enchanted Hall</h2>
 </section>
+
+<section class="carrusel-bodas">
+    <div class="carrusel-contenedor">
+    <img src="img/bodas.jpg" alt="Boda 1" />
+    <img src="img/bodas2.jpg" alt="Boda 2" />
+    <img src="img/bodas3.jpg" alt="Boda 3" />
+    <img src="img/bodas4.jpg" alt="Boda 4" />
+    </div>
+</section>
+
+
+<!-- Testimonios -->
+<section class="testimonios-bodas">
+<h3>Lo que dicen nuestras parejas:</h3>
+<div class="testimonio">
+    <p>"Fue un sueño cumplido. Todo salió perfecto." – Ana & Julián</p>
+</div>
+<div class="testimonio">
+    <p>"Ambiente mágico y atención impecable. Gracias por tanto." – Carla & Leo</p>
+</div>
+</section>
+
+<section id="formulario-boda" class="formulario-boda">
+    <h3>Solicitá tu presupuesto</h3>
+    <form action="#" method="post" autocomplete="on">
+    <div class="campo-formulario">
+        <label for="nombre">Nombre y apellido</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required />
+    </div>
+
+    <div class="campo-formulario">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
+    </div>
+
+    <div class="campo-formulario">
+        <label for="fecha">Fecha del evento</label>
+        <input type="date" id="fecha" name="fecha" required />
+    </div>
+
+    <div class="campo-formulario">
+        <label for="invitados">Cantidad de invitados</label>
+        <input type="number" id="invitados" name="invitados" placeholder="Cantidad de invitados" required />
+    </div>
+
+    <div class="campo-formulario">
+        <label for="detalles">Detalles o ideas que tengas en mente</label>
+        <textarea id="detalles" name="detalles" placeholder="Contanos más sobre tu evento..."></textarea>
+    </div>
+
+    <button type="submit">Enviar</button>
+    </form>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-content">
+    <img src="img/logo_enchanted_transparent.png" alt="Logo Enchanted Hall" class="footer-logo" />
+    <p>Creando momentos inolvidables desde 2005 ✨</p>
+    <div class="redes-sociales">
+        <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+    
+    </div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Enchanted Hall. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+
+
+<script src="js/carrusel.js"></script>
 </body>
 </html>
+
