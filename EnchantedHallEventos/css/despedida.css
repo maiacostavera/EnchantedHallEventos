@@ -1,0 +1,63 @@
+    body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333 !important; /* Gris oscuro */
+}
+
+.navbar-brand img {
+  filter: brightness(1.2);
+}
+
+/* Frase inspiradora o despedida */
+.frase-despedida {
+  background: linear-gradient(135deg, #fafafa, #eeeeee);
+  color: #333333;
+  padding: 1.5rem 2rem;
+  font-style: italic;
+  text-align: center;
+  border-radius: 20px;
+  margin: 30px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+
+/* Carrusel de imágenes corporativas */
+.carrusel-corporativos img {
+  border-radius: 15px;
+}
+
+/* Testimonios */
+.testimonio-card {
+  background-color: #ffe6f0;
+  border-left: 5px solid #e056fd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Botones */
+.btn-despedida {
+  background-color: #e056fd;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-despedida:hover {
+  background-color: #be4bdb;
+}
+
+/* Footer */
+footer {
+  background-color: #333; /* Gris oscuro para combinar con navbar */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}

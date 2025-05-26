@@ -1,0 +1,119 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fffaf6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fcefee !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.nav-link {
+    color: #884c7b !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #b03060 !important;
+}
+
+/* Frase principal */
+.frase-comunion {
+    background-color: #fef6fa;
+    text-align: center;
+    color: #b03060;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+
+/* Carrusel */
+.carrusel-comuniones {
+    overflow: hidden;
+    padding: 1rem 0;
+    background-color: #ffffff;
+}
+
+.carrusel-contenedor {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 1rem;
+}
+
+.carrusel-contenedor img {
+    border-radius: 10px;
+    max-height: 350px;
+    width: auto;
+    object-fit: cover;
+}
+
+/* Testimonios */
+blockquote {
+    background-color: #f9f1ff;
+    border-left: 5px solid #d9a5c2;
+    padding: 1.2rem;
+    border-radius: 10px;
+    font-style: italic;
+    color: #555;
+    background-image: url('../img/comillas.png'); /* opcional */
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    background-size: 20px;
+}
+
+/* Formulario */
+.formulario-comunion {
+    background-color: #fff2f6;
+    padding: 2rem;
+}
+
+.formulario-comunion h3 {
+    text-align: center;
+    color: #b03060;
+    margin-bottom: 1.5rem;
+}
+
+.form-control:focus {
+    border-color: #b03060;
+    box-shadow: 0 0 0 0.2rem rgba(176, 48, 96, 0.25);
+}
+
+/* Footer */
+footer {
+    background-color: #fcefee;
+    color: #884c7b;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.redes-sociales img {
+    width: 24px;
+    margin: 0 8px;
+    transition: transform 0.2s ease;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: #999;
+}
