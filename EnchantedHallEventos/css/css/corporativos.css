@@ -1,0 +1,19 @@
+body {
+font-family: 'Montserrat', sans-serif;
+background-color: #f5f5f5;
+color: #333;
+}
+
+.frase-corporativa {
+background-color: #343a40;
+color: #ffffff;
+}
+
+.testimonio-card {
+background-color: #ffffff;
+border-left: 4px solid #343a40;
+}
+
+.carrusel-corporativos img {
+border-radius: 15px;
+}
