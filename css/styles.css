@@ -1,0 +1,1263 @@
+/* GLOBAL STYLES  */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #fffdf8;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    height: 6rem;
+    margin-right: 10px;
+    margin-right: 15px; 
+    max-height: none; 
+    transition: all 0.3s ease;
+}
+
+.hero-img,
+#heroCarousel .carousel-inner,
+#heroCarousel .carousel-item {
+    border-radius: 0 !important;
+}
+
+.hero-img {
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none !important;
+}
+
+.carousel-indicators {
+    display: none !important;
+}
+
+.hero-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    .hero-img {
+        height: 65vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-img {
+        height: 55vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-img {
+        height: 45vh;
+    }
+}
+
+/* --- Sección de Tipos de Eventos (Contenedor Principal) --- */
+.seccion-eventos {
+    padding: 60px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/* --- Título H2 de la Sección --- */
+.seccion-eventos h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.seccion-eventos h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #d23669;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* --- (Card Individual) --- */
+.seccion-eventos .card {
+    margin: auto;
+    font-size: 0.95rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: none; /* Asegurar que no haya borde por defecto */
+}
+
+.seccion-eventos .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Imagen de la Card --- */
+.seccion-eventos .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* --- Cuerpo de la Card --- */
+.seccion-eventos .card-body {
+    padding: 25px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* --- Título de la Card --- */
+.seccion-eventos .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+}
+
+/* --- Descripción de la Card --- */
+.seccion-eventos .card-text {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* --- Botón "Ver Más" --- */
+.seccion-eventos .card-body .btn {
+    background-color: #d23669;
+    color: #fff;
+    border: 2px solid #d23669;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.seccion-eventos .card-body .btn:hover {
+    background-color: #a82b54;
+    border-color: #a82b54;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Media Queries para Responsividad --- */
+@media (max-width: 767.98px) {
+    .seccion-eventos {
+        padding: 40px 15px;
+    }
+
+    .seccion-eventos h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .seccion-eventos h2::after {
+        width: 60px;
+    }
+
+    .seccion-eventos .card {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .seccion-eventos .card-img-top {
+        height: 180px;
+    }
+
+    .seccion-eventos .card-body {
+        padding: 20px;
+    }
+
+    .seccion-eventos .card-title {
+        font-size: 1.4rem;
+    }
+
+    .seccion-eventos .card-text {
+        font-size: 0.9rem;
+    }
+
+    .seccion-eventos .card-body .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .seccion-eventos h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Esto aplica los estilos normales a los divs de servicio */
+#seccion-servicios > div {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#seccion-servicios > div {
+    border-left: 5px solid #d23669;
+}
+
+#seccion-servicios > div h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+#seccion-servicios > div p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+
+@media (max-width: 767.98px) {
+    #seccion-servicios > div {
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #d23669;
+    }
+    #seccion-servicios > div h2 { 
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+    #seccion-servicios > div p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: left;
+    }
+}
+
+
+/* Estilos para la sección de testimonios */
+section.bg-light.py-5 {
+    background-color: #f8f9fa;
+}
+
+.blockquote {
+    background-color: #ffffff;
+    border-left: 5px solid #a08adf;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.blockquote:hover {
+    transform: translateY(-5px);
+}
+
+.blockquote p {
+    font-size: 1.1rem;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.blockquote footer {
+    font-size: 0.9rem;
+    color: #000000;  
+    background-color: #ffffff;
+    text-align: right;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block; /* para que el fondo ajuste al texto */
+}
+
+/* Estilos para el formulario de contacto */
+.formulario-presupuesto {
+    background-color: #fff0f5;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(176, 48, 96, 0.15);
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario-presupuesto h2 {
+    color: #b03060;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.formulario-presupuesto .form-label {
+    font-weight: 600;
+    color: #5a2c3c;
+}
+
+.formulario-presupuesto .form-control,
+.formulario-presupuesto .form-select {
+    border: 1.5px solid #b03060;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.formulario-presupuesto .form-control:focus,
+.formulario-presupuesto .form-select:focus {
+    border-color: #ff66a3;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 102, 163, 0.4);
+}
+
+.formulario-presupuesto .btn-primary {
+    background-color: #b03060;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-presupuesto .btn-primary:hover {
+    background-color: #ff66a3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center; 
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
+/* baby shower */
+.frase-romantica {
+    background-color: #fff0f5;
+    color: #b03060;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-top: 3px dashed #ffc0cb;
+    border-bottom: 3px dashed #ffc0cb;
+}
+
+/* carrusel Baby Shower */
+.carrusel-babyshower {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fcf8f0; 
+}
+
+#carruselBabyshower {
+    max-width: 950px; 
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#carruselBabyshower .carousel-item img {
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
+    display: block;
+}
+
+#carruselBabyshower .carousel-inner {
+    max-height: 520px; 
+    overflow: hidden;
+}
+
+#carruselBabyshower .carousel-indicators [data-bs-target] {
+    background-color: #ffb6c1; 
+    opacity: 0.7;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+#carruselBabyshower .carousel-indicators .active {
+    opacity: 1;
+    background-color: #ff69b4; 
+}
+
+#carruselBabyshower .carousel-control-prev-icon,
+#carruselBabyshower .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+/* bodas */
+.frase-romantica {
+    background-color: #fffaf5;
+    padding: 30px 0;
+}
+
+.frase-romantica h2 {
+    animation: aparecer 2s ease-in-out forwards;
+    opacity: 0;
+    text-align: center;
+    font-size: clamp(1.2em, 3.5vw, 1.5em); 
+    font-family: serif;
+    font-weight: 700;
+    color: #b8860b;      
+    letter-spacing: 0.03em; 
+    line-height: 1.3; 
+    max-width: 800px; 
+    margin: 40px auto; 
+}
+
+/* Para pantallas medianas (por ejemplo, tablets) */
+@media (max-width: 768px) {
+    .frase-romantica h2 {
+        font-size: 1.5em; 
+    }
+}
+
+/* Para pantallas pequeñas (por ejemplo, móviles) */
+@media (max-width: 480px) {
+    .frase-romantica h2 {
+        font-size: 1.2em; 
+        letter-spacing: 0.02em; 
+    }
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* --- Galería --- */
+
+#carruselBodas {
+    max-width: 1000px; /* Ancho máximo para el carrusel de bodas */
+    margin: 0 auto; /* Centrar el carrusel */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    overflow: hidden; /* Asegura que la sombra y los bordes se apliquen correctamente */
+}
+
+#carruselBodas .carousel-item img {
+    width: 100%;
+    max-height: 600px; /* Altura máxima para las imágenes de bodas, como solicitaste */
+    object-fit: cover; /* Recorta la imagen para cubrir el espacio sin distorsionar */
+    display: block;
+}
+
+#carruselBodas .carousel-inner {
+    max-height: 600px; /* Debe coincidir con la max-height de la imagen */
+    overflow: hidden;
+}
+
+#carruselBodas .carousel-indicators [data-bs-target] {
+    background-color: #b8860b; /* Color dorado/café para los puntos de bodas */
+    opacity: 0.6;
+    border-radius: 50%;
+    width: 12px; /* Tamaño del punto */
+    height: 12px; /* Tamaño del punto */
+}
+
+#carruselBodas .carousel-indicators .active {
+    opacity: 1; /* El punto activo es completamente visible */
+    background-color: #a07a00; /* Un dorado más oscuro para el punto activo */
+}
+
+#carruselBodas .carousel-control-prev-icon,
+#carruselBodas .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5); /* Fondo semitransparente para las flechas */
+    border-radius: 50%; /* Flechas circulares */
+    padding: 15px; /* Tamaño del fondo de las flechas */
+}
+
+
+/* --------------Lista de horarios----------- */
+.timeline-section {
+    background-color: #f9f9f9;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #ddd;
+    height: auto; 
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 60px;
+}
+
+.timeline-item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #343a40;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0 3px rgba(52, 58, 64, 0.2);
+}
+
+.timeline-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-content h4 {
+    margin-top: 0;
+    color: #343a40;
+    font-size: 1.3rem;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Estilos chatbot */
+#chatbot-box {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    width: 320px;
+    height: 400px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    z-index: 1500;
+    font-family: 'Arial', sans-serif;
+}
+
+#chatbot-header {
+    background-color: #a08adf;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 15px 20px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    cursor: default;
+}
+
+#close-chatbot {
+    cursor: pointer;
+    font-size: 1.3rem;
+    line-height: 1;
+    color: white;
+}
+
+#chatbot-messages {
+    padding: 15px;
+    height: 250px;
+    overflow-y: auto;
+    background: #f9f7ff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#chatbot-messages .bot {
+    background-color: #e3d9ff;
+    padding: 10px 15px;
+    border-radius: 12px;
+    max-width: 80%;
+    align-self: flex-start;
+    font-size: 0.9rem;
+    color: #3a2f5a;
+}
+
+#chatbot-messages .user {
+    background-color: #a08adf;
+    padding: 10px 15px;
+    border-radius: 12px;
+    max-width: 80%;
+    align-self: flex-end;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#chatbot-input-area {
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    gap: 10px;
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+#send-msg {
+    background-color: #a08adf;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#send-msg:hover {
+    background-color: #8c76cc;
+}
+
+/* Botón flotante chatbot */
+#chatbot-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #a08adf;
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(160, 138, 223, 0.6);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+#chatbot-button:hover {
+    transform: scale(1.1);
+}
+
+/*  corparativos  */
+
+.frase-corporativo {
+    background-color: #f8f9fa;  
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: 4px solid #2c3e50; 
+    border-bottom: 4px solid #2c3e50;
+}
+
+.frase-corporativo h2 {
+    color: #2c3e50; 
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Versión móvil */
+@media (max-width: 768px) {
+    .frase-corporativo h2 {
+        font-size: 1.4rem;
+    }
+    .frase-corporativo {
+        padding: 2rem 1rem;
+    }
+}
+
+/* carrusel corporativo */
+
+.carrusel-corporativos-grande {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f2f2f2; 
+}
+
+#carruselCorporativos {
+    max-width: 1100px; 
+    margin: 0 auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1); 
+    border-radius: 6px; 
+    overflow: hidden;
+}
+
+#carruselCorporativos .carousel-item img {
+    width: 100%;
+    max-height: 650px; 
+    object-fit: cover;
+    display: block;
+}
+
+#carruselCorporativos .carousel-inner {
+    max-height: 650px;
+    overflow: hidden;
+}
+
+#carruselCorporativos .carousel-indicators [data-bs-target] {
+    background-color: #555; 
+    opacity: 0.7;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+#carruselCorporativos .carousel-indicators .active {
+    opacity: 1;
+    background-color: #000;
+}
+
+#carruselCorporativos .carousel-control-prev-icon,
+#carruselCorporativos .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    padding: 14px; 
+}
+
+/*  despedida */
+.carrusel-simple {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f5f5f5; 
+}
+
+#carruselDespedida {
+    max-width: 980px; 
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#carruselDespedida .carousel-item img {
+    width: 100%;
+    max-height: 580px; 
+    object-fit: cover;
+    display: block;
+}
+
+#carruselDespedida .carousel-inner {
+    max-height: 580px; 
+    overflow: hidden;
+}
+
+#carruselDespedida .carousel-indicators [data-bs-target] {
+    background-color: #888; 
+    opacity: 0.6;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+#carruselDespedida .carousel-indicators .active {
+    opacity: 1;
+    background-color: #333; 
+}
+
+#carruselDespedida .carousel-control-prev-icon,
+#carruselDespedida .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.frase-despedida {
+    background: linear-gradient(to right, #e6e6fa, #f0f8ff);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: 3px dashed #9370db;
+    border-bottom: 3px dashed #9370db;
+}
+
+.frase-despedida h2 {
+    color: #663399; 
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* comuniones */
+.frase-comunion {
+    background-color: #fffaf0;
+    text-align: center;
+    color: #c9517e; 
+    font-weight: 600; 
+    font-size: 1.8rem; 
+    line-height: 1.4; 
+    padding: 2.5rem 2rem; 
+    margin: 0 auto; 
+    max-width: 800px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif; 
+}    
+
+.carrusel-comuniones {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f5f9;
+}
+
+#carruselComuniones {
+    max-width: 900px; 
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#carruselComuniones .carousel-item img {
+    width: 100%;
+    max-height: 500px; 
+    object-fit: cover;
+    display: block;
+}
+
+#carruselComuniones .carousel-inner {
+    max-height: 500px; 
+    overflow: hidden;
+}
+
+#carruselComuniones .carousel-indicators [data-bs-target] {
+    background-color: #87ceeb; 
+    opacity: 0.6;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+#carruselComuniones .carousel-indicators .active {
+    opacity: 1;
+    background-color: #4682b4; 
+}
+
+#carruselComuniones .carousel-control-prev-icon,
+#carruselComuniones .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+/* quince */
+.carrusel-quinceaneras {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f8f8f8;
+}
+
+#carruselQuinceaneras {
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-inner {
+    max-height: 550px;
+    overflow: hidden;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #b8860b;
+    opacity: 0.5;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+/* Sección de frase quinceañera */
+.frase-quince {
+    width: 100%;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #f8bbd0, #fce4ec); 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo del texto */
+.frase-quince h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 2.2rem;
+    color: #880e4f;
+    font-weight: 600;
+    margin: 0;
+    max-width: 900px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1s ease-out forwards;
+}
+
+/* Animación suave de entrada */
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE - Dispositivos medianos (tablets) */
+@media (max-width: 768px) {
+    .frase-quince {
+        padding: 60px 15px;
+    }
+
+    .frase-quince h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* RESPONSIVE - Dispositivos pequeños (celulares) */
+@media (max-width: 480px) {
+    .frase-quince {
+        padding: 50px 10px;
+    }
+
+    .frase-quince h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/*  egresados */
+
+.carrusel-egresados {
+    padding-top: 20px; /* Añade padding vertical como el de quinceañeras */
+    padding-bottom: 20px;
+    background-color: #f8f8f8; /* Fondo similar */
+}
+
+#carruselEgresados {
+    max-width: 1000px; /* Ancho máximo para el carrusel */
+    margin: 0 auto; /* Centra el carrusel */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para el carrusel */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido respete los bordes redondeados */
+}
+
+#carruselEgresados .carousel-item img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    display: block;
+}
+
+#carruselEgresados .carousel-inner {
+    max-height: 550px;
+    overflow: hidden;
+    /* Las clases rounded-4 y shadow de Bootstrap en tu HTML son buenas,
+    pero para consistencia con el de quinceañeras, las propiedades
+       box-shadow y border-radius se aplican al #carruselEgresados directamente. */
+}
+
+#carruselEgresados .carousel-indicators [data-bs-target] {
+    background-color: #4CAF50; /* Verde brillante para los puntos (similar a colores de birretes) */
+    opacity: 0.7; /* Opacidad para los indicadores no activos */
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+#carruselEgresados .carousel-indicators .active {
+    opacity: 1; /* Opacidad completa para el indicador activo */
+    background-color: #2e7d32; /* Verde más oscuro para el punto activo */
+}
+
+#carruselEgresados .carousel-control-prev-icon,
+#carruselEgresados .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5); /* Fondo semi-transparente para las flechas, ajustado a 0.5 */
+    border-radius: 50%;
+    padding: 15px; /* Ajustado el padding a 15px */
+}
+
+/* frase */
+.frase-egresados {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: linear-gradient(to right, #fdf6e3, #e0f2f7); 
+    color: #333; 
+    margin-bottom: 2rem;
+}
+
+.frase-egresados h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.frase-egresados p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 280px;
+    }
+    
+    .frase-egresados h2 {
+        font-size: 1.3rem;
+    }
+    
+    .frase-egresados {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 220px;
+    }
+    
+    .frase-egresados h2 {
+        font-size: 1.1rem;
+    }
+    
+    .frase-egresados p {
+        font-size: 0.9rem;
+    }
+}
+
+/* galeria */
+.gallery-filter-buttons {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.gallery-item {
+    transition: 0.3s ease-in-out;
+}
+
+.gallery-item.hide {
+    display: none;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.filter-btn.active {
+    background-color: #b03060;
+    color: white;
+    border-color: #b03060;
+}
+
+/* contactos */
+
+.contacto-directo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.contacto-item {
+    text-align: center;
+    padding: 1.5rem;
+    border: 1px solid #f0e6eb;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.contacto-item:hover {
+    transform: translateY(-5px);
+    border-color: #b03060;
+}
+
+.mapa-container {
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* HORARIO SIMPLE */
+.horario-atencion {
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #e0c8d1;
+    border-radius: 8px;
+}
+
+.horario-atencion h4 {
+    color: #b03060;
+    margin-bottom: 0.5rem;
+}
+
+.horario-atencion p {
+    margin: 0.3rem 0;
+    color: #5a2c3c;
+}
+
+/* FAQ SIMPLE */
+.faq-contacto {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.faq-contacto h4 {
+    color: #b03060;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.faq-contacto p {
+    margin: 0 0 1rem 0;
+    color: #666;
+}
