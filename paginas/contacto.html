@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Enchanted Hall</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    
+</head>
+<body>
+    
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+<a class="navbar-brand" href="../index.html">
+<img src="../img/logo_enchanted_transparent.png" alt="Logo" class="logo">
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="eventosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Eventos
+</a>
+<ul class="dropdown-menu" aria-labelledby="eventosDropdown">
+    <li><a class="dropdown-item" href="bodas.html">Bodas</a></li>
+    <li><a class="dropdown-item" href="quinceaneras.html">Quinceañeras</a></li>
+    <li><a class="dropdown-item" href="comuniones.html">Comuniones</a></li>
+    <li><a class="dropdown-item" href="egresados.html">Egresados</a></li>
+    <li><a class="dropdown-item" href="babyshower.html">Baby Shower</a></li>
+    <li><a class="dropdown-item" href="despedida.html">Despedida</a></li>
+    <li><a class="dropdown-item" href="corporativos.html">Corporativos</a></li>
+</ul>
+</li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Servicios</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../index.html#decoracion">Decoración personalizada</a></li>
+            <li><a class="dropdown-item" href="../index.html#catering">Catering</a></li>
+            <li><a class="dropdown-item" href="../index.html#coordinacion">Coordinación completa</a></li>
+            <li><a class="dropdown-item" href="../index.html#foto-video">Fotografía y video</a></li>
+            <li><a class="dropdown-item" href="../index.html#alquiler">Alquiler de equipo</a></li>
+        </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+    </ul>
+    </div>
+</div>
+</nav>
+
+<section class="container my-5 formulario-presupuesto">
+    <h2 class="text-center mb-4">Solicitá tu presupuesto</h2>
+    <form>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="evento" class="form-label">Tipo de evento:</label>
+            <select id="evento" name="evento" class="form-select" required>
+                <option value="">Seleccioná una opción</option>
+                <option value="cumpleaños">Cumpleaños</option>
+                <option value="casamiento">Casamiento</option>
+                <option value="despedidas">Despedidas</option>
+                <option value="corporativos">Fiestas Corporativas</option>
+                <option value="babyshower">BabyShower</option>
+                <option value="egresados">Egresados</option>
+                <option value="comuniones">Comuniones</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Detalles adicionales:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" class="form-control" placeholder="Cantidad de invitados, fecha estimada, etc."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+    </form>
+</section>
+
+
+    <div class="contacto-directo">
+    <div class="contacto-item">
+        <i class="bi bi-geo-alt-fill"></i>
+        <h4>Visítanos</h4>
+        <p>Av. Siempreviva 742, Buenos Aires</p>
+    </div>
+    <div class="contacto-item">
+        <i class="bi bi-whatsapp"></i>
+        <h4>WhatsApp</h4>
+        <p>+54 11 2345-6789</p>
+        <a href="https://wa.me/5491123456789" class="btn-whatsapp">Escribinos</a>
+    </div>
+    <div class="contacto-item">
+        <i class="bi bi-envelope-fill"></i>
+        <h4>Email</h4>
+        <p>contacto@enchantedhall.com</p>
+    </div>
+    </div>
+
+<!--Mapa interactivo de ubicación con enlace a Google Maps-->
+
+    <section class="container my-5" id="Contacto">
+        <h2 class="text-center mb-4">¿Dónde estamos?</h2>
+
+        <div style="max-width: 300px; margin: 0 auto;">
+        <div class="ratio ratio-16x9">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13121.719446233315!2d-58.40568320435587!3d-34.6943362982626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccde8b110947%3A0x62c64543ecc3f0be!2sLa%20Mansi%C3%B3n%20Eventos!5e0!3m2!1ses!2sar!4v1750547642305!5m2!1ses!2sar" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+        </div>
+</section>
+
+
+    <div class="horario-atencion">
+    <h4><i class="bi bi-clock"></i> Horarios</h4>
+    <p>Lunes a Viernes: 9:00 - 20:00 hs</p>
+    <p>Sábados: 10:00 - 18:00 hs</p>
+    <p class="text-muted">* Feriados: consultar</p>
+    </div>
+
+
+    <div class="faq-contacto">
+    <h4>¿Cuánto tardan en responder?</h4>
+    <p>Normalmente respondemos en menos de 24 horas hábiles.</p>
+    <h4>¿Hacen visitas guiadas?</h4>
+    <p>Sí, con cita previa coordinada por teléfono.</p>
+    </div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Enchanted Hall. Todos los derechos reservados.</p>
+    <p>Diseñado con amor para momentos inolvidables ✨</p>
+</footer>
+
+<!-- Chatbot básico CALL -->
+<div id="chatbot-box">
+<div id="chatbot-header">
+    Asistente Enchanted 💬
+    <span id="close-chatbot">×</span>
+</div>
+<div id="chatbot-messages">
+    <div class="bot">¡Hola! ¿Querés hacer una consulta?</div>
+</div>
+<div id="chatbot-input-area">
+    <input type="text" id="chat-input" placeholder="Escribí tu mensaje..." />
+    <button id="send-msg">Enviar</button>
+</div>
+</div>
+
+<!-- Botón CALL -->
+<button id="chatbot-button">💬</button>
+
+<script>
+    // Tu código JavaScript existente
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("¡Gracias por tu solicitud! Nos contactaremos a la brevedad.");
+    });
+    
+    // Código del chatbot...
+// Mostrar chatbot y ocultar botón
+document.getElementById("chatbot-button").onclick = () => {
+    document.getElementById("chatbot-box").style.display = "flex";
+    document.getElementById("chatbot-button").style.display = "none";
+};
+
+// Cerrar chatbot y mostrar botón
+document.getElementById("close-chatbot").onclick = () => {
+    document.getElementById("chatbot-box").style.display = "none";
+    document.getElementById("chatbot-button").style.display = "flex";
+};
+
+// Enviar mensaje
+document.getElementById("send-msg").onclick = () => {
+    const input = document.getElementById("chat-input");
+    const msg = input.value.trim();
+    if (msg !== "") {
+        const userMsg = document.createElement("div");
+        userMsg.className = "user";
+        userMsg.textContent = msg;
+
+        const botMsg = document.createElement("div");
+        botMsg.className = "bot";
+        botMsg.textContent = "¡Gracias por escribirnos! Te responderemos pronto.";
+
+        const chatBox = document.getElementById("chatbot-messages");
+        chatBox.appendChild(userMsg);
+        chatBox.appendChild(botMsg);
+        chatBox.scrollTop = chatBox.scrollHeight;
+
+        input.value = "";
+    }
+};
+
+// Enviar con Enter
+document.getElementById("chat-input").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        document.getElementById("send-msg").click();
+    }
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+</body>
+</html>

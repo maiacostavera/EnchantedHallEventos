@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galería - Enchanted Hall</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+<a class="navbar-brand" href="../index.html">
+<img src="../img/logo_enchanted_transparent.png" alt="Logo" class="logo">
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="eventosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Eventos
+</a>
+<ul class="dropdown-menu" aria-labelledby="eventosDropdown">
+    <li><a class="dropdown-item" href="bodas.html">Bodas</a></li>
+    <li><a class="dropdown-item" href="quinceaneras.html">Quinceañeras</a></li>
+    <li><a class="dropdown-item" href="comuniones.html">Comuniones</a></li>
+    <li><a class="dropdown-item" href="egresados.html">Egresados</a></li>
+    <li><a class="dropdown-item" href="babyshower.html">Baby Shower</a></li>
+    <li><a class="dropdown-item" href="despedida.html">Despedida</a></li>
+    <li><a class="dropdown-item" href="corporativos.html">Corporativos</a></li>
+</ul>
+</li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Servicios</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../index.html#decoracion">Decoración personalizada</a></li>
+            <li><a class="dropdown-item" href="../index.html#catering">Catering</a></li>
+            <li><a class="dropdown-item" href="../index.html#coordinacion">Coordinación completa</a></li>
+            <li><a class="dropdown-item" href="../index.html#foto-video">Fotografía y video</a></li>
+            <li><a class="dropdown-item" href="../index.html#alquiler">Alquiler de equipo</a></li>
+        </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+    </ul>
+    </div>
+</div>
+</nav>
+
+<!-- Galería completa -->
+<section class="container my-5" id="Galeria">
+<h2 class="text-center mb-4">Galería de Eventos</h2>
+
+<!-- Filtros -->
+<div class="text-center mb-4">
+    <button class="btn btn-outline-dark filter-btn" data-filter="boda">Bodas</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="quince">Quinceañeras</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="baby">Baby Shower</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="corporativo">Corporativos</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="despedida">Despedida</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="comuniones">Comuniones</button>
+
+</div>
+
+<!-- Imágenes -->
+<div class="row g-3 gallery-grid">
+    <div class="col-md-4 gallery-item boda">
+    <img src="../img/boda1.jpg" class="img-fluid rounded" alt="Boda 1">
+    </div>
+    <div class="col-md-4 gallery-item boda">
+    <img src="../img/boda2.jpg" class="img-fluid rounded" alt="Boda 2">
+    </div>
+    <div class="col-md-4 gallery-item boda">
+    <img src="../img/boda3.jpg" class="img-fluid rounded" alt="Boda 3">
+    </div>
+    <div class="col-md-4 gallery-item boda">
+    <img src="../img/boda4.jpg" class="img-fluid rounded" alt="Boda 4">
+    </div>
+    <div class="col-md-4 gallery-item boda">
+    <img src="../img/boda5.jpg" class="img-fluid rounded" alt="Boda 5">
+    </div>
+    <div class="col-md-4 gallery-item boda">
+    <img src="../img/boda6.jpg" class="img-fluid rounded" alt="Boda 6">
+    </div>
+    <div class="col-md-4 gallery-item quince">
+    <img src="../img/quince1.jpg" class="img-fluid rounded" alt="Quinceañera">
+    </div>
+    <div class="col-md-4 gallery-item quince">
+    <img src="../img/quince2.jpg" class="img-fluid rounded" alt="Quinceañera 2">
+    </div>
+    <div class="col-md-4 gallery-item quince">
+    <img src="../img/quince3.jpg" class="img-fluid rounded" alt="Quinceañera 3">
+    </div>
+    <div class="col-md-4 gallery-item quince">
+    <img src="../img/quince4.jpg" class="img-fluid rounded" alt="Quinceañera 4">
+    </div>
+    <div class="col-md-4 gallery-item quince">
+    <img src="../img/quince5.jpg" class="img-fluid rounded" alt="Quinceañera 6">
+    </div>
+    <div class="col-md-4 gallery-item quince">
+    <img src="../img/quince6.jpg" class="img-fluid rounded" alt="Quinceañera 6">
+    </div>
+    <div class="col-md-4 gallery-item baby">
+    <img src="../img/baby1.jpg" class="img-fluid rounded" alt="Baby Shower">
+    </div>
+    <div class="col-md-4 gallery-item baby">
+    <img src="../img/baby2.jpg" class="img-fluid rounded" alt="Baby Shower 2">
+    </div>
+    <div class="col-md-4 gallery-item baby">
+    <img src="../img/baby3.jpg" class="img-fluid rounded" alt="Baby Shower 3">
+    </div>
+    <div class="col-md-4 gallery-item baby">
+    <img src="../img/baby4.jpg" class="img-fluid rounded" alt="Baby Shower 4">
+    </div>
+    <div class="col-md-4 gallery-item baby">
+    <img src="../img/baby5.jpg" class="img-fluid rounded" alt="Baby Shower 5">
+    </div>
+    <div class="col-md-4 gallery-item baby">
+    <img src="../img/baby6.jpg" class="img-fluid rounded" alt="Baby Shower 6">
+    </div>
+    <div class="col-md-4 gallery-item corporativo">
+    <img src="../img/corporativo1.jpg" class="img-fluid rounded" alt="Corporativo">
+    </div>
+    <div class="col-md-4 gallery-item corporativo">
+    <img src="../img/corporativo2.jpg" class="img-fluid rounded" alt="Corporativo 2">
+    </div>
+    <div class="col-md-4 gallery-item corporativo">
+    <img src="../img/corporativo3.jpg" class="img-fluid rounded" alt="Corporativo 3">
+    </div>
+    <div class="col-md-4 gallery-item corporativo">
+    <img src="../img/corporativo4.jpg" class="img-fluid rounded" alt="Corporativo 4">
+    </div>
+    <div class="col-md-4 gallery-item corporativo">
+    <img src="../img/corporativo5.jpg" class="img-fluid rounded" alt="Corporativo 5">
+    </div>
+    <div class="col-md-4 gallery-item corporativo">
+    <img src="../img/corporativo6.jpg" class="img-fluid rounded" alt="Corporativo 6">
+    </div>
+    <div class="col-md-4 gallery-item despedida">
+    <img src="../img/despedidas1.jpg" class="img-fluid rounded" alt="Despedida">
+    </div>
+    <div class="col-md-4 gallery-item despedida">
+    <img src="../img/despedidas2.jpg" class="img-fluid rounded" alt="Despedida 2">
+    </div>
+    <div class="col-md-4 gallery-item despedida">
+    <img src="../img/despedidas3.jpg" class="img-fluid rounded" alt="Despedida 3">
+    </div>
+    <div class="col-md-4 gallery-item despedida">
+    <img src="../img/despedidas4.jpg" class="img-fluid rounded" alt="Despedida 4">
+    </div>
+    <div class="col-md-4 gallery-item despedida">
+    <img src="../img/despedidas5.jpg" class="img-fluid rounded" alt="Despedida 5">
+    </div>
+    <div class="col-md-4 gallery-item despedida">
+    <img src="../img/despedidas6.jpg" class="img-fluid rounded" alt="Despedida 6">
+    </div>
+    <div class="col-md-4 gallery-item comuniones">
+    <img src="../img/comunion1.jpg" class="img-fluid rounded" alt="Comuniones">
+    </div>
+    <div class="col-md-4 gallery-item comuniones">
+    <img src="../img/comunion2.jpg" class="img-fluid rounded" alt="Comuniones 2">
+    </div>
+    <div class="col-md-4 gallery-item comuniones">
+    <img src="../img/comunion3.jpg" class="img-fluid rounded" alt="Comuniones 3">
+    </div>
+    <div class="col-md-4 gallery-item comuniones">
+    <img src="../img/comunion4.jpg" class="img-fluid rounded" alt="Comuniones 4">
+    </div>
+    <div class="col-md-4 gallery-item comuniones">
+    <img src="../img/comunion5.jpg" class="img-fluid rounded" alt="Comuniones 5">
+    </div>
+    <div class="col-md-4 gallery-item comuniones">
+    <img src="../img/comunion6.jpg" class="img-fluid rounded" alt="Comuniones 6">
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+<p>&copy; 2025 Enchanted Hall. Todos los derechos reservados.</p>
+<p>Diseñado con amor para momentos inolvidables ✨</p>
+</footer>
+
+
+<!-- Scripts (solo una vez al final del body) -->
+
+<script>
+    // Tu código JavaScript existente
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("¡Gracias por tu solicitud! Nos contactaremos a la brevedad.");
+    });
+    
+</script>
+
+<script>
+  // Filtrado de imágenes por categoría
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    const filter = button.getAttribute('data-filter');
+
+    galleryItems.forEach(item => {
+        if (filter === 'all' || item.classList.contains(filter)) {
+        item.style.display = 'block';
+        } else {
+        item.style.display = 'none';
+        }
+        });
+    });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
