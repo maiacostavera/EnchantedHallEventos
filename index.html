@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchanted Hall Eventos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- Navbar Bootstrap -->
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+<a class="navbar-brand" href="index.html">
+<img src="img/logo_enchanted_transparent.png" alt="Logo" class="logo">
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="eventosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Eventos
+</a>
+<ul class="dropdown-menu" aria-labelledby="eventosDropdown">
+    <li><a class="dropdown-item" href="paginas/bodas.html">Bodas</a></li>
+    <li><a class="dropdown-item" href="paginas/quinceaneras.html">Quinceañeras</a></li>
+    <li><a class="dropdown-item" href="paginas/comuniones.html">Comuniones</a></li>
+    <li><a class="dropdown-item" href="paginas/egresados.html">Egresados</a></li>
+    <li><a class="dropdown-item" href="paginas/babyshower.html">Baby Shower</a></li>
+    <li><a class="dropdown-item" href="paginas/despedida.html">Despedida</a></li>
+    <li><a class="dropdown-item" href="paginas/corporativos.html">Corporativos</a></li>
+</ul>
+</li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Servicios</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#decoracion">Decoración personalizada</a></li>
+            <li><a class="dropdown-item" href="#catering">Catering</a></li>
+            <li><a class="dropdown-item" href="#coordinacion">Coordinación completa</a></li>
+            <li><a class="dropdown-item" href="#foto-video">Fotografía y video</a></li>
+            <li><a class="dropdown-item" href="#alquiler">Alquiler de equipo</a></li>
+        </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="paginas/galeria.html">Galería</a></li>
+    </ul>
+    </div>
+</div>
+</nav>
+
+
+<!-- Hero Carousel -->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img/evento.png" class="d-block w-100 hero-img" alt="Salón 1">
+                    </div>
+
+                <div class="carousel-item">
+                    <img src="img/evento1.png" class="d-block w-100 hero-img" alt="Salón 2">
+                    </div>
+
+                <div class="carousel-item">
+                    <img src="img/evento3.png" class="d-block w-100 hero-img" alt="Salón 3">
+                    </div>
+
+                <div class="carousel-item">
+                    <img src="img/evento4.png" class="d-block w-100 hero-img" alt="Salón 4">
+                    </div>
+
+            </div>
+            </div>
+    </section>
+
+<!-- Sección de Tipos de Eventos -->
+<div class="container my-5 seccion-eventos">
+<h2 class="text-center mb-4">Tipos de Eventos que Ofrecemos</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+    <div class="col">
+    <div class="card h-100 text-center">
+        <img src="img/eventoboda2.jpg" class="card-img-top" alt="Bodas">
+        <div class="card-body">
+        <h5 class="card-title">Bodas</h5>
+        <p class="card-text">Celebrá tu día especial en un ambiente romántico y elegante.</p>
+        <a href="paginas/bodas.html" class="btn btn-outline-dark btn-sm mt-2">Ver más</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card h-100 text-center">
+        <img src="img/eventoquince2.jpg" class="card-img-top" alt="Quinceañeras">
+        <div class="card-body">
+        <h5 class="card-title">Quinceañeras</h5>
+        <p class="card-text">Hacemos realidad la fiesta soñada para tu gran noche.</p>
+        <a href="paginas/quinceaneras.html" class="btn btn-outline-dark btn-sm mt-2">Ver más</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card h-100 text-center">
+        <img src="img/eventoegresado2.jpg" class="card-img-top" alt="Egresados">
+        <div class="card-body">
+        <h5 class="card-title">Egresados</h5>
+        <p class="card-text">Una fiesta inolvidable para cerrar una etapa con tus compañeros.</p>
+        <a href="paginas/egresados.html" class="btn btn-outline-dark btn-sm mt-2">Ver más</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card h-100 text-center">
+        <img src="img/eventobabyshower.jpg" class="card-img-top" alt="Baby Shower">
+        <div class="card-body">
+        <h5 class="card-title">Baby Shower</h5>
+        <p class="card-text">Un momento tierno y emotivo para dar la bienvenida al bebé.</p>
+        <a href="paginas/babyshower.html" class="btn btn-outline-dark btn-sm mt-2">Ver más</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card h-100 text-center">
+        <img src="img/eventodespedida2.jpg" class="card-img-top" alt="Despedidas">
+        <div class="card-body">
+        <h5 class="card-title">Despedidas</h5>
+        <p class="card-text">Fiestas únicas para celebrar los nuevos comienzos.</p>
+        <a href="paginas/despedida.html" class="btn btn-outline-dark btn-sm mt-2">Ver más</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card h-100 text-center">
+        <img src="img/eventocorporativo2.jpg" class="card-img-top" alt="Corporativos">
+        <div class="card-body">
+        <h5 class="card-title">Corporativos</h5>
+        <p class="card-text">Organizamos eventos empresariales con profesionalismo y estilo.</p>
+        <a href="paginas/corporativos.html" class="btn btn-outline-dark btn-sm mt-2">Ver más</a>
+        </div>
+    </div>
+    </div>
+
+</div>
+</div>
+
+
+<!-- Servicios -->
+<main id="seccion-servicios" class="container my-5">
+    <div id="decoracion" class="mb-4">
+        <h2>Decoración personalizada</h2>
+        <p>En nuestro servicio de diseño de ambientación, nos especializamos en transformar tus sueños en realidad, creando espacios únicos y memorables para bodas, quinceañeras, fiestas infantiles y eventos corporativos. Trabajamos estrechamente contigo para entender tu visión, seleccionando colores, texturas y elementos decorativos que reflejen tu personalidad y la esencia de tu celebración. Desde centros de mesa elegantes hasta iluminación ambiental y arreglos florales exquisitos, cada detalle es cuidadosamente planificado para garantizar armonía y sofisticación. Utilizamos materiales de alta calidad y tendencias vanguardistas, adaptándonos a tu presupuesto sin comprometer la excelencia. Déjanos encargarnos de la magia visual mientras tú disfrutas de cada momento especial con tus seres queridos.</p>
+    </div>
+
+    <div id="catering" class="mb-4">
+        <h2>Catering</h2>
+        <p> En Enchanted Hall nos especializamos en ofrecer un servicio de catering excepcional, pensado para deleitar a todos los paladares.  
+    Contamos con menús variados y personalizados que se adaptan a los gustos, alergias y requerimientos especiales de tus invitados.  
+    Desde opciones gourmet hasta propuestas tradicionales, cada plato está elaborado con ingredientes frescos y de alta calidad.  
+    Nuestro equipo culinario trabaja contigo para crear una experiencia gastronómica única que acompañe el estilo de tu evento.  
+    Ya sea un cóctel informal, una cena elegante o un brunch temático, nos ocupamos de cada detalle para que solo disfrutes.
+</p>
+    </div>
+    <div id="coordinacion" class="mb-4">
+    <h2>Coordinación completa</h2>
+        <p>Nos encargamos de la planificación y ejecución integral de tu evento, cuidando cada detalle desde el inicio hasta el cierre.  
+    Coordinamos proveedores, tiempos y espacios para que todo fluya sin contratiempos ni preocupaciones.  
+    Nuestro equipo está presente en cada etapa, asegurando que tu visión se haga realidad tal como la imaginaste.  
+    Supervisamos el montaje, la ambientación, el catering y el cronograma para que vos solo disfrutes el momento.  
+    Con Enchanted Hall, vivís tu celebración con tranquilidad, sabiendo que todo está bajo control profesional.
+</p>
+    </div>
+    <div id="foto-video" class="mb-4">
+        <h2>Fotografía y video</h2>
+        <p>Capturamos cada instante con equipos de alta calidad y fotógrafos profesionales apasionados por contar historias reales.  
+    Desde los preparativos hasta los momentos más espontáneos, buscamos retratar la esencia única de tu evento.  
+    Cada fotografía refleja emociones genuinas, detalles cuidados y recuerdos que perduran en el tiempo.  
+    Ofrecemos cobertura completa, edición profesional y entrega personalizada en formatos digitales o impresos.  
+    Con nuestro servicio, podés revivir tu celebración una y otra vez, como si estuvieras ahí de nuevo.
+</p>
+    </div>
+    <div id="alquiler" class="mb-4">
+        <h2>Alquiler de equipo</h2>
+        <p>Disponemos de mobiliario moderno y cómodo, sistemas de iluminación profesional, equipos de sonido de alta calidad y todo el equipamiento necesario para ambientar y potenciar tu celebración.  
+    Nuestro catálogo incluye desde mesas y sillas hasta pantallas y accesorios especiales para que cada detalle esté cubierto.  
+    Trabajamos con tecnología actualizada y materiales en excelente estado para garantizar funcionalidad y estilo.  
+    Nos adaptamos a diferentes espacios y tamaños de evento, asegurando una experiencia única y sin contratiempos.  
+    Con nuestro servicio, tu fiesta contará con la infraestructura perfecta para que solo te dediques a disfrutar.
+</p>
+    </div>
+</main>
+
+<!-- Testimonio -->
+<section class="bg-light py-5">
+<div class="container">
+    <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+    <div class="row">
+    <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+        <p class="mb-0">"Una noche mágica e inolvidable. ¡Gracias Enchanted Hall!"</p>
+        <footer class="blockquote-footer">Mariana y Juan</footer>
+        </blockquote>
+    </div>
+    <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+        <p class="mb-0">"Se ocuparon de todo, fue perfecto de principio a fin."</p>
+        <footer class="blockquote-footer">Laura (mamá de Sofi)</footer>
+        </blockquote>
+    </div>
+    <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+        <p class="mb-0">"El lugar, la comida, la música... ¡Un 10!"</p>
+        <footer class="blockquote-footer">Empresa NovaCorp</footer>
+        </blockquote>
+    </div>
+    </div>
+</div>
+</section>
+
+<!--una línea de tiempo interactiva del evento-->
+
+<section class="container my-5">
+<h2 class="text-center mb-4">¿Cómo es un evento en Enchanted Hall?</h2>
+<div class="row text-center">
+    <div class="col">
+    <img src="img/icono-recepcion.svg" alt="Recepción" width="50">
+    <h5>Recepción</h5>
+    </div>
+    <div class="col">
+    <img src="img/icono-banquete.svg" alt="Banquete" width="50">
+    <h5>Banquete</h5>
+    </div>
+    <div class="col">
+    <img src="img/icono-fiesta.svg" alt="Fiesta" width="50">
+    <h5>Fiesta</h5>
+    </div>
+    <div class="col">
+    <img src="img/icono-final.svg" alt="Final" width="50">
+    <h5>Final con brindis</h5>
+    </div>
+</div>
+</section>
+
+
+<!--Mapa interactivo de ubicación con enlace a Google Maps-->
+<section class="container my-5" id="Contacto">
+<h2 class="text-center mb-4">¿Dónde estamos?</h2>
+
+<div style="max-width: 300px; margin: 0 auto;">
+    <div class="ratio ratio-16x9">
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13121.719446233315!2d-58.40568320435587!3d-34.6943362982626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccde8b110947%3A0x62c64543ecc3f0be!2sLa%20Mansi%C3%B3n%20Eventos!5e0!3m2!1ses!2sar!4v1750547642305!5m2!1ses!2sar" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+</div>
+</section>
+
+<!-- Formulario -->
+<section class="container my-5 formulario-presupuesto">
+    <h2 class="text-center mb-4">Solicitá tu presupuesto</h2>
+    <form>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="evento" class="form-label">Tipo de evento:</label>
+            <select id="evento" name="evento" class="form-select" required>
+                <option value="">Seleccioná una opción</option>
+                <option value="cumpleaños">Cumpleaños</option>
+                <option value="casamiento">Casamiento</option>
+                <option value="despedidas">Despedidas</option>
+                <option value="corporativos">Fiestas Corporativas</option>
+                <option value="babyshower">BabyShower</option>
+                <option value="egresados">Egresados</option>
+                <option value="comuniones">Comuniones</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Detalles adicionales:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" class="form-control" placeholder="Cantidad de invitados, fecha estimada, etc."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2025 Enchanted Hall. Todos los derechos reservados.</p>
+    <p>Diseñado con amor para momentos inolvidables ✨</p>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/5491123456789" class="whatsapp-float" target="_blank">
+<img src="img/whatsapp-icon.svg" alt="WhatsApp" />
+</a>
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("¡Gracias por tu solicitud! Nos contactaremos a la brevedad.");
+    });
+</script>
+
+</body>
+</html>
